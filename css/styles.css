@@ -1,0 +1,172 @@
+:root {
+  --bg-color: #ffffff;
+  --secondary-bg-color: #908a8a;
+  --primary-color: #fff;
+  --secondary-color: #25cc88;
+  --text-color: #000000;
+  --border-color: #20235b;
+  --bg-image: url("./assent/background.jpg");
+}
+
+#checkout-page {
+  background-image: var(--bg-image);
+  background-size: cover;   
+  background-repeat: no-repeat;
+  color: var(--primary-color);
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+/* Mensagem  */
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+#fade .spinner-border {
+  width: 60px;
+  height: 60px;
+}
+
+.hide {
+  display: none !important;
+}
+
+#message {
+  width: 40%;
+}
+
+#clonse-message {
+  font-style: oblique;
+}
+
+.alert.alert-dark p {
+  border-bottom: 1px solid rgb(92, 90, 90);
+  padding: 1.2em 0;
+  color: red;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Steps */
+#order-form-container {
+  padding: 1.5em;
+}
+
+#steps {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.step i {
+  background-color: var(--secondary-bg-color);
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+.step .active {
+  background-color: var(--secondary-color);
+}
+
+.step p {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.line {
+  border-bottom: 1px solid var(--border-color);
+  position: absolute;
+  top: 22.5px;
+  width: 90%;
+  left: 5%;
+  z-index: -1;
+}
+
+/* From header*/
+#form-header p {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+/* form */
+#order-from-container {
+  max-width: 500px;
+}
+
+#order-form-container input,
+#order-from-container select {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+}
+
+#order-form-container label {
+  color: var(--text-color);
+  left: 1em;
+  bottom: 30px;
+}
+
+#order-form-container input:disabled,
+#order-form-container select:disabled {
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+}
+
+#order-form-container input:focus {
+  border-color: var(--secondary-color);
+}
+
+#save-btn {
+  background-color: #25cc88;
+  border: none;
+  height: 3em;
+  width: 8em;
+  border-radius: 1.5em;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+/* Config Float Labels*/
+.floating-labels label {
+  color: rgb(8, 8, 8);
+  font-size: 16px;
+  position: absolute;
+  cursor: auto;
+  top: -10px;
+}
+
+.floating-labels .form-group {
+  position: relative
+}
+
+.floating-labels .form-control:focus~label,
+.floating-labels .form-control:not(:placeholder-shown)~label {
+  top: -20px;
+  font-size: 15px;
+}
+.floating-labels .form-control:focus~label,
+.floating-labels .form-control:not(:-ms-input-placeholder)~label {
+  top: -20px;
+  font-size: 12px;
+}
