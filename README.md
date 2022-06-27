@@ -2,7 +2,7 @@
 
 Simulador de Cadastramento de Endereço VIA CEP
 
-(SKILLs: HTML 5, JavaScrip, CSS e recurso de API)
+(SKILLs: HTML 5, JavaScript, CSS e recurso de API)
 
 Com layout Responsivo e Hiperlink, na Foto do Logo, redirecionando para outra aba!
 
